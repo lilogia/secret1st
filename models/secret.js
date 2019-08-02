@@ -11,12 +11,18 @@ const mongoose = require("mongoose"),
         name: {
             type: String
         },
-        password: {
-            type: String
+        pwd: {
+            type: String,
+            expose: true
         }
     });
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/secret_db", {useNewUrlParser: true});
+mongoose.connect("mongodb://localhost:27017/secret_db", 
+    {
+        useNewUrlParser: true,
+        useFindAndModify: false,
+        useCreateIndex: true
+    });
 
 module.exports = mongoose.model("Secret", secretSchema);

@@ -22,7 +22,10 @@ app.get("/", (req, res) => {
 app.get("/newSecret", secretController.newSecret);
 app.get("/listSecrets", secretController.getAllSecrets);
 app.get("/allSecrets", secretController.getAllSecrets);
+app.get("/edit", secretController.editSecret);
+app.get("/delete", secretController.deleteSecret);
 app.post("/saveSecret", secretController.saveSecret);
+app.post("/modifySecret", secretController.modifySecret);
 
 app.use(errorController.errorPageNotFound);
 app.use(errorController.errorInternalServer);
