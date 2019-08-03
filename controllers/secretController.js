@@ -22,8 +22,8 @@ exports.deleteSecret = (req, res) => {
     console.log(`Delete ${secretName}...`);
     Secret.findOneAndDelete({secret: secretName}, (error, secret) => {
         if (error) res.send(error);
-        res.render("secret", {
-            secret: secret 
+        res.render("info", {
+            action: "Delete" 
         });
     });
 };
