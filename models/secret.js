@@ -5,8 +5,7 @@ const mongoose = require("mongoose"),
             required: true
         },
         url: {
-            type: String,
-            unique: true
+            type: String
         },
         name: {
             type: String

@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
 <div class="container-fluid">
@@ -14,11 +15,14 @@
     <span class="display-4 text-white bg-info">Secret1st</span><br/>
     <span class="small">Manage Passwords, Secret keys tool</span>
     </div>
-    <div class="row">
-        <div class="col"><a href="/">Home</a></div>
-        <div class="col"><a href="newSecret">New</a></div>
-        <div class="col"><a href="listSecrets">List</a></div>
-    </div>
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+        <li class="nav-item"><span class=""><a class="nav-link" href="newSecret">New</a></span></li>
+        <li class="nav-item"><a class="nav-link" href="listSecrets">List</a></li>
+    </ul>
+    </nav>
     <%- body%>
 </div>
 </body>
