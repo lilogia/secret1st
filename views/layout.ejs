@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
+<!DOCTYPE html>
+<html>
 <head>
     <title>Secret1st</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-
-    <h1>Secret1st</h1>
-    &nbsp;
-    <a href="/">Home</a>
-    &nbsp;&nbsp;
-    <a href="newSecret">New</a>
-    &nbsp;&nbsp;
-    <a href="listSecrets">List</a>
-    <br/>
+<div class="container-fluid">
+    <div>
+    <span class="display-4 text-white bg-info">Secret1st</span><br/>
+    <span class="small">Manage Passwords, Secret keys tool</span>
+    </div>
+    <div class="row">
+        <div class="col"><a href="/">Home</a></div>
+        <div class="col"><a href="newSecret">New</a></div>
+        <div class="col"><a href="listSecrets">List</a></div>
+    </div>
     <%- body%>
-
+</div>
 </body>
 </html>
